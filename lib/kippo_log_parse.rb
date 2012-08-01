@@ -1,7 +1,7 @@
 class Kippo_log_parse
   NEWCONNECTION_REGEX = /\[kippo\.core\.honeypot\.HoneyPotSSHFactory\]\sNew\sconnection\:\s(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):\d{1,8}\s\(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\:22\)\s\[session\:\s(\d*)\]/
   SSHVERSION_REGEX = /\[HoneyPotTransport,\d,\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\]\s(Remote\sSSH\sversion:\s.*)/
-  DISCONNECTION_REGEX = /\[HoneyPotTransport\,(\d{1,8}),(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})]\sconnection\slost/
+  DISCONNECTION_REGEX = /\[HoneyPotTransport\,(\d{1,8}),(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\sconnection\slost/
   AUTH_ATTEMPT = /\[SSHService\sssh-userauth\son\sHoneyPotTransport,(\d{1,8}),(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s(.*\strying\s.*)/
   LOGIN_ATTEMPT = /\[SSHService\sssh-userauth\son\sHoneyPotTransport,(\d{1,8}),(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\slogin\sattempt\s\[(.*)\/(.*)\]\s(.*)/
   LOGIN_SUCCESS = /\[SSHService\sssh-userauth\son\sHoneyPotTransport,(\d{1,8}),(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s(.*)\sauthenticated\swith\s(.*)/
