@@ -28,7 +28,7 @@ class Kippo_log_parse
       puts "LOGIN ATTEMPT FROM #{login_attempt[2]} - User/Password: #{login_attempt[3]}/#{login_attempt[4]} - Status: #{login_attempt[5]} - Session Number #{login_attempt[1]}".blue
     elsif login_success
       print "LOGIN SUCCESS - ".green
-      print "#{login_success[3]}@#{login_success[2]}".blue
+      print "#{login_success[3]}@#{login_success[2]}".red
       print " via #{login_success[4]} - Session Number #{login_success[1]}\n".green
     elsif cmd_run
       puts "COMMAND FROM #{cmd_run[2]} | #{cmd_run[3]} | Session Number #{cmd_run[1]}".green
