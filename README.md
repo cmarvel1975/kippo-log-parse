@@ -1,4 +1,4 @@
 kippo-log-parse
 ===============
 
-Read Kippo logfiles
+Read Kippo logfiles and add some color
